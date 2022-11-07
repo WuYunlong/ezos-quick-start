@@ -1,0 +1,29 @@
+{
+  "name": "@ezos/create-vite",
+  "version": "1.0.5",
+  "description": "create vite app",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "create-vite": "index.js"
+  },
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [],
+  "author": "WuYunlong<177712582@qq.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuyunlong/quick-start.git",
+    "directory": "packages/create-vite"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "template",
+    "packages.json"
+  ]
+}
