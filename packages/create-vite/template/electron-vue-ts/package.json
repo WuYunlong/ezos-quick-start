@@ -10,7 +10,7 @@
   },
   "description": "Electron App With electron-vite",
   "scripts": {
-    "start": "electron-forge start",
+    "start": "electron-vite start",
     "dev": "electron-vite dev",
     "preview": "electron-vite preview",
     "type:check": "npm run check:node && npm run check:web",
@@ -21,17 +21,15 @@
     "build:win": "npm run build && electron-builder --win --config",
     "build:mac": "npm run build && electron-builder --mac --config",
     "build:linux": "npm run build && electron-builder --linux --config",
-    "postinstall": "electron-builder install-app-deps",
-    "package": "electron-forge package",
-    "make": "electron-forge make"
+    "postinstall": "electron-builder install-app-deps"
   },
   "dependencies": {
     "vue": "^3.2.45"
   },
   "devDependencies": {
     "@types/node": "^18.11.9",
-    "@typescript-eslint/eslint-plugin": "^5.42.1",
-    "@typescript-eslint/parser": "^5.42.1",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
     "@vitejs/plugin-vue": "^3.2.0",
     "electron": "^21.2.3",
     "electron-builder": "^23.6.0",
