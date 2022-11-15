@@ -16,7 +16,7 @@ const renameFiles: Record<string, string | undefined> = {
   _gitignore: '.gitignore'
 }
 
-const TEMPLATES: string = ['vue-ts']
+const TEMPLATES: string[] = ['vue-ts', 'electron-vue-ts']
 
 const defaultTargetDir = 'project'
 
@@ -120,7 +120,8 @@ async function init() {
           }
         },
         {
-          type: argTemplate && TEMPLATES.include(argTemplate) ? null : 'select',
+          type:
+            argTemplate && TEMPLATES.includes(argTemplate) ? null : 'select',
           name: 'template',
           message: () => {
             let msg = `请选择模版:`
@@ -132,20 +133,12 @@ async function init() {
           initial: 0,
           choices: [
             {
-              title: 'vue',
-              value: 'vue'
-            },
-            {
               title: 'vue-ts',
               value: 'vue-ts'
             },
             {
-              title: 'react',
-              value: 'react'
-            },
-            {
-              title: 'react-ts',
-              value: 'react-ts'
+              title: 'electron-vue-ts',
+              value: 'electron-vue-ts'
             }
           ]
         },
@@ -165,8 +158,8 @@ async function init() {
         }
       }
     )
-  } catch (e) {
-    console.log(e.message)
+  } catch {
+    console.log(`Error ......`)
     return
   }
 

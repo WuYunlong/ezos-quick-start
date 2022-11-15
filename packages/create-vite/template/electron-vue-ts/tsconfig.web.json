@@ -1,0 +1,16 @@
+{
+  "extends": "./config/tsconfig.web.json",
+  "include": [
+    "src/renderer/**/*.ts",
+    "src/preload/**/*.tsx",
+    "src/preload/**/*.vue",
+    "src/types/*.d.ts"
+  ],
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  }
+}

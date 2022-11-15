@@ -1,6 +1,6 @@
 {
   "name": "@ezos/create-vite",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "create vite app",
   "main": "index.js",
   "type": "module",
