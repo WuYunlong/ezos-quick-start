@@ -10,7 +10,7 @@
   },
   "description": "Electron App With electron-vite",
   "scripts": {
-    "start": "electron-vite start",
+    "start": "electron-vite start --watch",
     "dev": "electron-vite dev",
     "preview": "electron-vite preview",
     "type:check": "npm run check:node && npm run check:web",
@@ -32,7 +32,7 @@
     "@typescript-eslint/parser": "^5.43.0",
     "@vitejs/plugin-vue": "^3.2.0",
     "electron": "^21.2.3",
-    "electron-builder": "^23.6.0",
+    "electron-builder": "24.0.0-alpha.3",
     "electron-vite": "^1.0.14",
     "eslint": "^8.27.0",
     "eslint-config-prettier": "^8.5.0",
